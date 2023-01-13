@@ -9,7 +9,7 @@
     width: 100%;
     height: 50vh;
     object-fit: cover;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
 }
 
 #blog-post .header-container h1 {
@@ -65,4 +65,15 @@
 
 #blog-post button:active {
     transform: scale(0.97);
+}
+
+@media (max-width: 425px) {
+    #blog-post .body-container {
+        padding: 0;
+    }
+
+    #blog-post img {
+        height: 10%;
+        border-radius: 1rem;
+    }
 }

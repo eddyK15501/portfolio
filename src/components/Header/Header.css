@@ -56,3 +56,9 @@
     position: absolute;
     transform: translateY(30px);
 }
+
+@media (max-width: 375px) {
+    #header h2 {
+        font-size: 1.3rem;
+    }
+}

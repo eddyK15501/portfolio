@@ -80,3 +80,9 @@
     transform: scale(1.03);
     box-shadow: 0 10px 20px rgb(0 0 0 / 70%);
 }
+
+@media (max-width: 425px) {
+    #projects .projects-main-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

@@ -79,3 +79,17 @@
 #about p:last-child {
     margin-bottom: 1.2rem;
 }
+
+@media (max-width: 768px) {
+    #about .content-container {
+        flex-wrap: wrap;
+    }
+
+    #about .image-container {
+        margin: 3.4375rem auto 1.875rem;
+    }
+
+    #about .card-container {
+        margin: 3.4375rem auto 1.875rem;
+    }
+}
