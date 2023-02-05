@@ -40,12 +40,12 @@ const Resume = () => {
                       <div className="project-links">
                         <ul>
                           <li>
-                            <a href="https://eddyk15501.github.io/Recipe_App_React/">
+                            <a href="https://eddyk15501.github.io/Recipe_App_React/" target="_blank">
                               https://eddyk15501.github.io/Recipe_App_React/
                             </a>
                           </li>
                           <li>
-                            <a href="https://github.com/eddyK15501/Recipe_App_React">
+                            <a href="https://github.com/eddyK15501/Recipe_App_React" target="_blank">
                               https://github.com/eddyK15501/Recipe_App_React
                             </a>
                           </li>
@@ -62,12 +62,12 @@ const Resume = () => {
                       <div className="project-links">
                         <ul>
                           <li>
-                            <a href="https://eddyk15501.github.io/Youtube_React/">
+                            <a href="https://eddyk15501.github.io/Youtube_React/" target="_blank">
                               https://eddyk15501.github.io/Youtube_React/
                             </a>
                           </li>
                           <li>
-                            <a href="https://github.com/eddyK15501/Youtube_React">
+                            <a href="https://github.com/eddyK15501/Youtube_React" target="_blank">
                               https://github.com/eddyK15501/Youtube_React
                             </a>
                           </li>
@@ -84,12 +84,12 @@ const Resume = () => {
                       <div className="project-links">
                         <ul>
                           <li>
-                            <a href="https://eddyk15501.github.io/Todo_List_React/">
+                            <a href="https://eddyk15501.github.io/Todo_List_React/" target="_blank">
                               https://eddyk15501.github.io/Todo_List_React/
                             </a>
                           </li>
                           <li>
-                            <a href="https://github.com/eddyK15501/Todo_List_React">
+                            <a href="https://github.com/eddyK15501/Todo_List_React" target="_blank">
                               https://github.com/eddyK15501/Todo_List_React
                             </a>
                           </li>
