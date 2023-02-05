@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap');
+
+#resume {
+    font-family: 'Roboto', san-serif;
+    font-weight: 400;
+    box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 5%), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
+}
+
+#resume.dark {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+#resume .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    margin: 0 auto;
+    padding: 4rem 3rem 5rem;
+}
+
+#resume .header {
+    margin-bottom: 2.5rem;
+}
+
+#resume .header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+#resume.dark .header h1 {
+    color: #fff;
+}
+
+#resume .container {
+    background-color: #f8f8f8;
+    border-radius: 0.625rem;
+    padding: 5rem; 
+    width: 100%;
+    max-width: 900px;
+}
+
+#resume.dark .container {
+    background-color: rgba(255, 255, 255, 0.035);
+}
+
+#resume .my-resume-header {
+    margin-bottom: 2.5rem;
+}
+
+#resume .my-resume-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#resume h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 3.5rem 0 2.5rem;
+    text-decoration: underline;
+}
+
+#resume p {
+    margin-top: 1.25rem;
+}
+
+#resume .my-resume-objective {
+    font-size: 1.2rem;
+}
+
+#resume .project h4 {
+    margin: 1.75rem 0 1rem;
+}
+
+#resume .project p {
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    margin-left: 1rem;
+}
+
+#resume .project-links {
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+}
+
+#resume .project-links a {
+    word-wrap: break-word;
+    display: block;
+    margin-top: 0.3rem;
+    text-decoration: none;
+}
+
+#resume .project-links a:link {
+    color: #6CB4EE;
+}
+
+#resume .project-links a:visited {
+    color: #6CB4EE;
+}
+
+#resume .project-links a:active {
+    color: #aa8351;
+}
+
+#resume.dark .project-links a:link {
+    color: #aa8351;
+}
+
+#resume.dark .project-links a:visited {
+    color: #aa8351;
+}
+
+#resume.dark .project-links a:active {
+    color: #6CB4EE;
+}
+
+#resume .my-resume-certificates h4 {
+    margin: 1rem 0;
+}
+
+#resume .certificate {
+    margin-left: 3rem;
+}
+
+#resume .certificate li {
+    margin-top: 0.3rem;
+}
+
+#resume .edu-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#resume .edu-top h4 {
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+#resume .edu-top h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+#resume .edu-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-top: 1.7rem;
+}
+
+#resume .edu-bottom h5 {
+    font-size: 0.9rem;
+    font-weight: 400;
+} 
+
+#resume .skills-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#resume .skills-container ul {
+    margin-left: 1.75rem;
+}
+
+#resume .skills-container li {
+    margin-top: 0.3rem;
+}
+
+#resume .skills-container h4 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+#resume button {
+    cursor: pointer;
+    display: block;
+    margin: 4.5rem auto 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+}
+
+#resume button:hover {
+    background-color: #6CB4EE;
+    color: white;
+    transform: scale(1.05);
+}
+
+#resume.dark button:hover {
+    background-color: #aa8351;
+}
+
+#resume button:active {
+    transform: scale(0.97);
+}
+
+/* Media Query */
+
+@media (max-width: 1280px) {
+    #resume .container {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 609px) {
+    #resume .project p {
+        margin-left: 0.5rem;
+    }
+
+    #resume .project-links {
+        margin-left: 2rem;
+    }
+
+    #resume .certificate {
+        margin-left: 1.5rem;
+    }
+
+    #resume .edu-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #resume .edu-bottom {
+        margin-left: 0.5rem;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 539px) {
+    #resume .project-links a {
+        font-size: 0.75rem;
+    }
+
+    #resume .skills-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 426px) {
+    #resume .project-links {
+        margin-left: 0.8rem;
+    }
+}

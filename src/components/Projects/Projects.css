@@ -6,6 +6,11 @@
     box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 5%), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
 }
 
+#projects.dark {
+    background-color: #484848;
+    transition: 0.2s ease-in;
+}
+
 #projects .main-container {
     padding: 6% 0 13% 0;
     max-width: 1450px;
@@ -32,6 +37,10 @@
     color: #000;
 }
 
+#projects.dark .header-container h1 {
+    color: #fff;
+}
+
 #projects .projects-main-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -40,6 +49,10 @@
 
 #projects .projects-main-container h1 {
     color: #000;
+}
+
+#projects.dark .projects-main-container h1 {
+    color: #fff;
 }
 
 #projects .project {
@@ -52,6 +65,11 @@
     padding: 0.625rem 0.625rem 0.3125rem 0.625rem;
     box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
     transition: all 0.3s ease-out;
+}
+
+#projects.dark .project-container {
+    background-color: #6d6d6d;
+    border: 1px solid rgba(0, 0, 0, 0.35);
 }
 
 #projects .project-container a {

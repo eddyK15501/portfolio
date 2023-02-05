@@ -1,3 +1,8 @@
+#blog-post.dark {
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
 #blog-post .blog-post-container {
     width: 100%;
     max-width: 1440px;
@@ -61,6 +66,10 @@
     background-color: #6CB4EE;
     color: white;
     transform: scale(1.05);
+}
+
+#blog-post.dark button:hover {
+    background-color: #aa8351;
 }
 
 #blog-post button:active {

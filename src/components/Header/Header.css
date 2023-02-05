@@ -9,6 +9,13 @@
     align-items: center;
     flex-direction: column;
     height: calc(100vh - 55px);
+    transition: 0.2s ease-in;
+}
+
+#header.dark {
+    color: #fff;
+    background: #1f1f1f; 
+    transition: 0.2s ease-in;
 }
 
 #header .container {
@@ -16,13 +23,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
     position: relative;
 }
 
 #header h1 {
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 #header h2 {
@@ -31,7 +38,7 @@
 }
 
 #header .contact-button {
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 #header .contact-button button {
@@ -48,13 +55,97 @@
     transform: scale(1.05);
 }
 
+#header.dark .contact-button button:hover {
+    background-color: #aa8351;
+}
+
 #header .contact-button button:active {
     transform: scale(0.97);
 }
 
 #header .script-container {
     position: absolute;
-    transform: translateY(30px);
+    transform: translateY(5px);
+}
+
+#header .dark-theme-mode {
+    margin-top: 4.8rem;
+}
+
+#header .dark-theme-mode label {
+    width: 80px;
+    height: 35px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+#header .dark-theme-mode label:after {
+    content: "";
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: linear-gradient(180deg,#d1d1d1,#7c7c7c);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+#header .dark-theme-mode input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#header .dark-theme-mode input:checked + label {
+    background: #242424;
+}
+
+#header .dark-theme-mode input:checked + label:after {
+    left: 79px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#d1d1d1,#7c7c7c);
+}
+
+#header .dark-theme-mode label, label:after {
+    transition: 0.25s;
+}
+
+#header .dark-theme-mode label:hover:after {
+    width: 38px;
+}
+
+#header .dark-theme-mode .sun {
+    position: absolute; 
+    z-index: 1;
+    color: #000;
+    top: 4.5px;
+    left: 4.5px;
+    fill: #aa8351;
+    transition: 0.25s;
+}
+
+#header .dark-theme-mode .moon {
+    position: absolute;
+    z-index: 1;
+    top: 4.5px; 
+    left: 50.5px;
+    fill: #7e7e7e;
+    transition: 0.25s;
+}
+
+#header .dark-theme-mode input:checked + label .sun {
+    color: #fff;
+    fill: #7e7e7e;
+}
+
+#header .dark-theme-mode input:checked + label .moon {
+    fill: #fff;
+    color: #000;
 }
 
 @media (max-width: 375px) {

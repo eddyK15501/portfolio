@@ -5,6 +5,12 @@
     box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 5%), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
 }
 
+#about.dark {
+    background-color: #7f7f7f;
+    color: #fff;
+    transition: 0.2s ease-in;
+}
+
 #about .main-container {
     padding: 6% 0;
     max-width: 1250px;
@@ -33,6 +39,11 @@
     margin: 3.4375rem 4.6875rem 1.875rem 0;
 }
 
+#about.dark .image-container {
+    background-color: #6d6d6d;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
 #about img {
     width: 200px;
     height: 250px;
@@ -50,10 +61,19 @@
     border: 1px solid rgba(0, 0, 0, .125);
 }
 
+#about.dark .card-container {
+    border: 1px solid rgba(0, 0, 0, .35);
+}
+
 #about .card-top {
     border-bottom: 1px solid rgba(0, 0, 0, .125);
     background-color: rgba(0, 0, 0, .03);
     padding: 0.46875rem 0.78125rem;
+}
+
+#about.dark .card-top {
+    border-bottom: 1px solid rgba(0, 0, 0, .35);
+    background-color: #6d6d6d;
 }
 
 #about .card-top svg {
@@ -62,6 +82,10 @@
 
 #about .card-bottom {
     padding: 0.78125rem 1.40625rem;
+}
+
+#about.dark .card-bottom {
+    background-color: #6d6d6d;
 }
 
 #about .card-bottom h2 {

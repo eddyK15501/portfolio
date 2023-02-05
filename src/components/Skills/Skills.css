@@ -6,6 +6,12 @@
     box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 5%), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
 }
 
+#skills.dark {
+    color: #fff;
+    background: #1f1f1f;
+    transition: 0.2s ease-in;
+}
+
 #skills .main-container {
     padding: 6% 0 12% 0;
     max-width: 1450px;
@@ -46,6 +52,10 @@
     border-radius: 5px;
     font-size: 0.7rem;
     margin: 5px 10px;
+}
+
+#skills.dark .skill-container {
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 #skills .logo-header {

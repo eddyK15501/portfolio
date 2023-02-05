@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './BlogPost.css';
+import { useSelector } from 'react-redux';
 
 const BlogPost = ({ image, alt, title, quote }) => {
+  const darkMode = useSelector(state => state.darkTheme.bool)
+
   return (
-    <div id="blog-post">
+    <div id="blog-post" className={`${darkMode && 'dark'}`}>
       <div className="blog-post-container">
         <div className="header-container">
           <img src={image} alt={alt} />

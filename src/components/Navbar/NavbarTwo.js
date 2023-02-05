@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
 import { Link as LinkTo } from 'react-router-dom';
-import { Link } from 'react-scroll';
 import './Navbar.css';
+import { useSelector } from 'react-redux';
 
-function Navbar() {
+const NavbarTwo = () => {
+  const darkMode = useSelector((state) => state.darkTheme.bool)
+
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   return (
     <>
-      <nav className="navbar">
+      <nav className={`navbar ${darkMode && 'dark'}`}>
         <div className="nav-container">
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
               <LinkTo
                 exact="true"
                 to="/"
-                // activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
               >
@@ -46,7 +47,8 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-links"
-                onClick={() => (window.location = 'mailto:edk1231@gmail.com')}
+                href="mailto:edk1231@gmail.com"
+                target="_blank"
               >
                 Contact
               </a>
@@ -61,4 +63,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarTwo;

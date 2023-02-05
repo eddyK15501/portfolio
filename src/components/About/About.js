@@ -1,9 +1,13 @@
 import React from 'react';
 import './About.css';
+import MyPicture from '../../images/20221017_130305.jpg';
+import { useSelector } from 'react-redux';
 
 const About = () => {
+  const darkMode = useSelector((state) => state.darkTheme.bool);
+
   return (
-    <div id="about">
+    <div id="about" className={`${darkMode && 'dark'}`}>
       <div className="main-container">
         <div className="header">
           <h1>ABOUT ME</h1>
@@ -11,8 +15,8 @@ const About = () => {
         <div className="content-container">
           <div className="image-container">
             <img
-              src="https://pbs.twimg.com/media/FEaFK4OWUAAlgiV?format=jpg&name=900x900"
-              alt="portfolio-image"
+              src={MyPicture}
+              alt="my-portfolio-image"
             />
           </div>
           <div className="card-container">
