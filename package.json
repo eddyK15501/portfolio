@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "homepage": "https://eddyK15501.github.io/Portfolio",
+  "homepage": "https://eddyk15501.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
